@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Desafío Bíblico Multijugador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌟 Desafío Bíblico Multijugador</h1>
+  </header>
+
+  <main>
+    <div id="registro">
+      <h2>Ingresa tu nombre</h2>
+      <input type="text" id="nombreJugador" placeholder="Tu nombre">
+      <button id="btnIniciar">✅ Ingresar</button>
+    </div>
+
+    <div id="juego" style="display:none;">
+      <div id="info-jugador">
+        <p>Jugador: <span id="jugador"></span> | Puntos: <span id="puntos">0</span></p>
+      </div>
+
+      <div id="pregunta">
+        <h2 id="texto-pregunta"></h2>
+      </div>
+
+      <div id="opciones" class="opciones"></div>
+
+      <div id="timer">⏳ Tiempo: <span id="tiempo">30</span>s</div>
+    </div>
+
+    <div id="ranking">
+      <h3>🏆 Ranking Global</h3>
+      <ul id="listaRanking"></ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>Creado por jóvenes y para jovenes Cristianos - © 2025</p>
+    <p>Ministerio Conexion Viva - ©derechos reservados</p>
+    <p>Iglesia Palabra Viva de las Asambleas de Dios</p>
+  </footer>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background: linear-gradient(to bottom right, #2e3192, #1bffff);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+header {
+  padding: 20px;
+  background: #0d1b2a;
+  border-bottom: 4px solid #ffd700;
+}
+h1 {
+  color: #ffd700;
+}
+#opciones button {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 15px;
+  background: #222;
+  color: #fff;
+  border: 2px solid #ffd700;
+  border-radius: 12px;
+  cursor: pointer;
+}
+#opciones button:hover {
+  background: #ffd700;
+  color: #000;
+}
+.correcto { background: #28a745 !important; }
+.incorrecto { background: #dc3545 !important; }
